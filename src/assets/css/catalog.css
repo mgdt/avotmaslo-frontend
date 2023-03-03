@@ -1,0 +1,156 @@
+.producers {
+  padding-top: 60px;
+  padding-bottom: 150px;
+}
+
+.producers__title {
+  margin-bottom: 75px;
+}
+
+.page-catalog {
+  position: relative;
+}
+
+.bg-3 {
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: -2;
+}
+
+.bg-1 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  width: 1253px;
+  height: 1007px;
+  display: block;
+}
+.bg-1 img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.bg-1-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.bg-1-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-image: linear-gradient(
+      to bottom,
+      #1e1e20 0%,
+      #1e1e20 10%,
+      transparent 30%,
+      transparent 80%,
+      #1e1e20 100%
+    ),
+    linear-gradient(
+      to right,
+      #1e1e20 0%,
+      transparent 10%,
+      transparent 90%,
+      #1e1e20 100%
+    );
+  z-index: 2;
+  height: 100%;
+}
+
+.catalog {
+  padding-bottom: 150px;
+  position: relative;
+}
+
+.bg-2 {
+  position: absolute;
+  width: 1220px;
+  right: 0;
+  top: 800px;
+  z-index: -5;
+}
+
+.catalog__title {
+  margin-bottom: 20px;
+}
+
+.catalog__subtitle {
+  max-width: 840px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 130%;
+  text-align: center;
+  color: #ffffff;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.catalog__description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 70px;
+}
+
+.catalog__text {
+  font-size: 18px;
+  line-height: 140%;
+  text-align: center;
+  color: #ffffff;
+}
+.catalog__text span {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 140%;
+  color: #f7ca60;
+}
+
+@media only screen and (max-width: 600px) {
+  .producers {
+    padding-top: 32px;
+  }
+  .producers__title {
+    margin-bottom: 50px;
+  }
+
+  .bg-1 {
+    display: none;
+  }
+  .producers__bg {
+    position: absolute;
+    right: 0;
+    z-index: -2;
+    top: 145px;
+  }
+  .producers {
+    padding-bottom: 100px;
+  }
+  .catalog__title {
+    margin-bottom: 30px;
+  }
+  .catalog__subtitle {
+    font-size: 18px;
+    line-height: 125%;
+    margin-bottom: 40px;
+  }
+  .catalog__text {
+    font-size: 16px;
+    line-height: 140%;
+  }
+  .catalog__description {
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  .catalog {
+    padding-bottom: 100px;
+  }
+}
