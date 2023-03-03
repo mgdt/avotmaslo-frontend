@@ -1,4 +1,4 @@
-# hello-world
+# Avtomaslo
 
 ## Project setup
 ```
